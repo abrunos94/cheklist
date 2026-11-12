@@ -2,21 +2,40 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist - Troca de Servidor</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Checklist - Troca de Servidor</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1>Troca de Servidor (Check e SGF)</h1>
-        <div id="app"></div>
-    </div>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="header-content">
+				<h1>Check List — Troca de Servidor<br>(Check e SGF)</h1>
+				<p class="intro-text">
+					Este checklist operacional consolida todas as etapas do manual da <a
+						href="https://baseconhecimentoconsys.suportepv.com/app/busca?q=Troca%20de%20Servidor%20-%20Check%20e%20SGF"
+						target="_blank" class="knowledge-link">Base de Conhecimento Consys</a>, referenciando exatamente
+					a seção e o item correspondente para consulta rápida durante a migração.
+				</p>
+			</div>
 
-    <!-- A ordem de importação importa -->
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+			<!-- Botão para alternar entre Dark e Light Mode -->
+			<button id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+				<span id="theme-icon">🌙</span>
+			</button>
+		</header>
+
+		<main class="container">
+			<!-- O JavaScript vai injetar as fases da migração e tarefas aqui dentro -->
+			<div id="checklist-container"></div>
+		</main>
+	</div>
+
+	<!-- Scripts -->
+	<script src="data.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>
