@@ -1,0 +1,54 @@
+/* style.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.phase-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #FFD700;
+    /* Detalhe dourado */
+}
+
+/* Fundo da barra de progresso */
+.progress-bar-container {
+    background-color: #333333;
+    border-radius: 4px;
+    height: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* Preenchimento dourado */
+.progress-bar-fill {
+    background-color: #FFD700;
+    height: 100%;
+    width: 0%;
+    /* O JavaScript vai alterar isso */
+    transition: width 0.3s ease;
+}
+
+.task-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.task-item input[type="checkbox"] {
+    margin-top: 4px;
+    margin-right: 10px;
+    accent-color: #FFD700;
+    /* Checkbox dourado nativo */
+}
